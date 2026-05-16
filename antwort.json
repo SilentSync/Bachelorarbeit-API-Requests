@@ -1,3 +1,0 @@
-{
-  "antwort": "# Willkommen! 👋\n\nDas freut mich, dass du deine erste API-Anfrage stellst! Ich helfe dir gerne weiter.\n\nUm dir optimal zu unterstützen, wäre hilfreich zu wissen:\n\n## Was möchtest du wissen?\n\n1. **Allgemeine API-Konzepte** verstehen?\n2. **Eine bestimmte API** nutzen (z.B. REST, GraphQL)?\n3. **Code schreiben** mit einer API?\n4. **Debugging** bei Problemen?\n\n## Erste Schritte\n\nFalls du ganz neu anfängst, hier ein kurzes Überblick:\n- **API** = Schnittstelle, um Daten/Funktionen zu nutzen\n- **HTTP-Methoden**: GET (abrufen), POST (senden), PUT/PATCH (ändern), DELETE (löschen)\n- **Response** = Antwort der API (oft JSON-Format)\n\n---\n\n**Was genau interessiert dich? Oder hast du bereits eine konkrete Aufgabe im Sinn?** 😊"
-}
