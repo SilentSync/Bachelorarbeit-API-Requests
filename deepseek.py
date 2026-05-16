@@ -38,7 +38,7 @@ for i, (problem_key, condition_key, promt) in enumerate(all_tasks):
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M"),
     })
 
-with open("results_deepseek.csv", "w", newline="") as f:
+with open("results/results_deepseek.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["iteration", "model", "problem", "condition", "response", "timestamp"])
     for r in results:
