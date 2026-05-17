@@ -1,5 +1,4 @@
-"""
-Problem Definitions for Cognitive Bias Study
+""" Problem Definitions for Cognitive Bias Study
 =============================================
 Stimuli replicated from:
   - Li & Feldman (2025): Mental Accounting (Problems 1-3)
@@ -85,7 +84,7 @@ PROBLEMS = {
     },
 
     "problem_18_basketball_sunk_cost": {
-        "source": "Zhu & Feldman (2025), originally Thaler (1980)",
+        "source": "Li & Feldman (2025), originally Thaler (1980)",
         "conditions": {
             "condition_1_paid_ticket": (
                 "Imagine that there is a basketball game to be played 60 miles "
