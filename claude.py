@@ -4,9 +4,9 @@ import csv
 from datetime import datetime
 from problems import SYSTEM_PROMPT
 
-all_tasks = generate_task(2,1)
+all_tasks = generate_task(500,42)
 client = anthropic.Anthropic()
-results = []
+count = 0
 
 with open("results/results_claude.csv", "w", newline="") as f:
     writer = csv.writer(f)
@@ -16,7 +16,7 @@ with open("results/results_claude.csv", "w", newline="") as f:
         print(f"API CALL: {problem_key} -> {condition_key}...", end=" ", flush=True)
         message = client.messages.create(
             model="claude-opus-4-6",
-            max_tokens=5,
+            max_tokens=50,
             system=SYSTEM_PROMPT,
             temperature=0.7,
             messages=[
@@ -29,6 +29,7 @@ with open("results/results_claude.csv", "w", newline="") as f:
 
         writer.writerow([i + 1, "claude-opus-4.6", problem_key, condition_key, answer, timestamp])
         f.flush()
+        count += 1
 
-print(f"\nDone! {len(results)} Answers saved.")
+print(f"\nDone! {count} Answers saved.")
 
